@@ -15,7 +15,7 @@ void setup() {
 }
 
 void loop() {
-  delay(500);   
+  delay(500); //response factor
 
   unsigned long pepe1=millis();  // takes the time before the loop on the library begins
 
@@ -31,7 +31,7 @@ void loop() {
 
 
 
-  if ((dis > 100) && (dis < 150)){
+  if ((dis > 101) && (dis < 179)){
  analogWrite(11,255);
   }
   else{
@@ -39,7 +39,7 @@ void loop() {
   }
 
   
-if (dis>= 200){
+if (dis>= 180){
   analogWrite(12,255);
   }
   else{
